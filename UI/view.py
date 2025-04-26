@@ -57,6 +57,9 @@ class View(ft.UserControl):
         self._controller.fillDD()
 
         #TextOutput
+        # TextOutput (added a Text control to display the result)
+        self.result_text = ft.Text(value="Results will be displayed here.", size=18, color="green")
+        self._page.add(self.result_text)
         self._txtOut = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=False)
 
         self._page.add(self._txtOut)
